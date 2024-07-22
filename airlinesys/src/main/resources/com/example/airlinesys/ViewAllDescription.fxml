@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesys.ViewAllDescription">
+   <children>
+      <ImageView fitHeight="533.0" fitWidth="853.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@istockphoto-1266264437-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="221.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Of All Scheduled Flights" wrappingWidth="410.8994140625">
+         <font>
+            <Font name="Baloo Bhaijaan Regular" size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" layoutX="717.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#backtoFM" prefHeight="30.0" prefWidth="93.0" text="Back" />
+      <StackPane layoutX="14.0" layoutY="111.0" prefHeight="311.0" prefWidth="828.0">
+         <children>
+            <TableView fx:id="table_info" prefHeight="311.0" prefWidth="825.0" style="-fx-background-color: Pink;">
+              <columns>
+                <TableColumn fx:id="FlightNo" prefWidth="91.0" text="FlightNo" />
+                <TableColumn fx:id="dep_time" minWidth="0.0" prefWidth="76.0" text="dep_time" />
+                  <TableColumn fx:id="dep_from" prefWidth="84.0" text="dep_from" />
+                  <TableColumn fx:id="arrive_at" text="arrive_at" />
+                  <TableColumn fx:id="connecting" prefWidth="165.0" text="connecting" />
+                  <TableColumn fx:id="arrive_time" prefWidth="254.0" text="arrive_time" />
+                  <TableColumn fx:id="date" prefWidth="75.0" text="date" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

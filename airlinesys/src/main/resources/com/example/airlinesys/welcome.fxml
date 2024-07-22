@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesys.welcomeController">
+   <children>
+      <ImageView fitHeight="533.0" fitWidth="853.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@The-future-of-customer-service-in-the-airline-industry-1.png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="533.0" prefWidth="853.0">
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="273.0" fitWidth="387.0" layoutX="261.0" layoutY="143.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@istockphoto-1347462063-170667a.jpg" />
+                     </image>
+                     <effect>
+                        <GaussianBlur />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="270.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="118.5361328125">
+                     <font>
+                        <Font name="Kefa Regular" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="272.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="114.34130859375">
+                     <font>
+                        <Font name="Kefa Regular" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="279.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login">
+                     <font>
+                        <Font name="Katari Regular" size="23.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="username" layoutX="376.0" layoutY="240.0" promptText="enter username" style="-fx-background-radius: 40;" />
+                  <PasswordField fx:id="password" layoutX="376.0" layoutY="276.0" promptText="enter password" style="-fx-background-radius: 40;" />
+                  <Button id="windows7" fx:id="login" defaultButton="true" layoutX="524.0" layoutY="372.0" mnemonicParsing="false" onAction="#tomenu"  stylesheets="@stylesheet.css" text="Login" />
+                  <Button id="windows7" fx:id="exit" layoutX="272.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#exit" stylesheets="@stylesheet.css" text="Exit" />
+                  <Text layoutX="261.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overnight Skies" wrappingWidth="462.5830078125">
+                     <font>
+                        <Font name="Brush Script MT Italic" size="58.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="wrongLogin" layoutX="367.0" layoutY="312.0" textFill="#e11004"/>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="74.0" prefWidth="853.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#545480" height="74.0" layoutY="2.0" stroke="#78803d"
+                             strokeType="INSIDE" width="853.0" />
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="80.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@af9ee2fec9340c9a9923d4887bc3dc2e.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="facebook.com/OvernightSkies" wrappingWidth="223.21630859375">
+                     <font>
+                        <Font name="Baloo Bhaijaan Regular" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="407.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photo-output.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="328.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="instagram.com/OvernightSkies" wrappingWidth="195.85107421875">
+                     <font>
+                        <Font name="Baloo Bhaijaan Regular" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="41.0" fitWidth="45.0" layoutX="696.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photo-output%202.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="642.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="twitter.com/OvernightSkies">
+                     <font>
+                        <Font name="Baloo Bhaijaan Regular" size="13.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

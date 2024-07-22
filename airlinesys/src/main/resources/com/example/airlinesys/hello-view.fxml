@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesys.HelloController">
+
+   <children>
+      <ImageView fitHeight="284.0" fitWidth="427.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@istockphoto-1347462063-170667a.jpg" />
+         </image>
+      </ImageView>
+      <Text fontSmoothingType="LCD" layoutX="132.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="49.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.3871733966745843" endY="0.33016627078384797" startX="0.43705463182897863" startY="0.6983372921615202">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="18.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="134.0" layoutY="97.0" style="-fx-background-radius: 40;" />
+      <Button fx:id="login" layoutX="111.0" layoutY="196.0" mnemonicParsing="false" onMouseClicked="#tomenu" prefHeight="26.0" prefWidth="83.0" text="Login" />
+      <Button fx:id="exit" layoutX="199.0" layoutY="196.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="26.0" prefWidth="83.0" text="Exit" />
+      <PasswordField layoutX="134.0" layoutY="129.0" style="-fx-background-radius: 40;" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="NW_RESIZE" />
+   </cursor>
+</AnchorPane>

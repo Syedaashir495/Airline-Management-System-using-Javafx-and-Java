@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesys.AddDescriptionController">
+   <ImageView fitHeight="533.0" fitWidth="853.0" opacity="0.24" pickOnBounds="true" preserveRatio="true">
+      <Image url="@istockphoto-1266264437-612x612.jpg" />
+   </ImageView>
+   <Text layoutX="126.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Description">
+      <font>
+         <Font name="Baloo Bhaijaan Regular" size="27.0" />
+      </font>
+   </Text>
+   <Text layoutX="108.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Number">
+      <font>
+         <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+      </font>
+   </Text>
+   <Text layoutX="108.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From ">
+      <font>
+         <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+      </font>
+   </Text>
+   <Text layoutX="449.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To">
+      <font>
+         <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+      </font>
+   </Text>
+   <Text layoutX="103.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure " wrappingWidth="117.04399871826172">
+      <font>
+         <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+      </font>
+   </Text>
+   <Text layoutX="407.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival ">
+      <font>
+         <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+      </font>
+   </Text>
+   <TextField fx:id="FlightNo" layoutX="257.0" layoutY="198.0" prefHeight="26.0" prefWidth="204.0" promptText="enter flight number" style="-fx-background-radius: 40;" />
+   <TextField fx:id="dep_from" layoutX="177.0" layoutY="245.0" promptText="from where to go" style="-fx-background-radius: 40;" />
+   <TextField fx:id="arrive_at" layoutX="485.0" layoutY="245.0" promptText="destination of flight" style="-fx-background-radius: 40;" />
+   <TextField fx:id="dep_time" layoutX="212.0" layoutY="346.0" promptText="enter time of departure" style="-fx-background-radius: 40;" />
+   <TextField fx:id="arrive_time" layoutX="507.0" layoutY="345.0" promptText="enter time of arrival" style="-fx-background-radius: 40;" />
+   <TextField fx:id="connecting" layoutX="237.0" layoutY="293.0" promptText="optional" style="-fx-background-radius: 40;" />
+
+   <Button id="windows7" fx:id="back" layoutX="51.0" layoutY="466.0" mnemonicParsing="false" onMouseClicked="#backToFlightM" prefHeight="34.0" prefWidth="109.0" stylesheets="@stylesheet.css" text="Back" />
+   <Button id="windows7" fx:id="exit" layoutX="691.0" layoutY="466.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="34.0" prefWidth="109.0" stylesheets="@stylesheet.css" text="Exit" />
+   <Button id="windows7" fx:id="addedToFile" layoutX="698.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#addTofile" prefHeight="34.0" prefWidth="109.0" stylesheets="@stylesheet.css" text="Add" />
+   <Text layoutX="108.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connecting">
+      <font>
+         <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+      </font>
+   </Text>
+   <Label fx:id="wrongFno" layoutX="476.0" layoutY="203.0" />
+   <FlowPane prefHeight="200.0" prefWidth="200.0" />
+   <Text layoutX="114.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Text>
+   <TextField fx:id="date" layoutX="186.0" layoutY="405.0" style="-fx-background-radius: 30;" />
+</AnchorPane>

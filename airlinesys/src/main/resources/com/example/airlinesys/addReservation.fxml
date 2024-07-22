@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airlinesys.addReservationController">
+   <children>
+      <ImageView fitHeight="533.0" fitWidth="853.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@istockphoto-1266264437-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="41.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Reservation" wrappingWidth="322.73602294921875">
+         <font>
+            <Font name="Baloo Bhaijaan Regular" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="125.21630859375">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Number" wrappingWidth="159.92919921875">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+         </font>
+      </Text>
+      <TextField layoutX="138.0" layoutY="389.0" prefHeight="26.0" prefWidth="323.0" promptText="enter name" style="-fx-background-radius: 30;" />
+      <Button id="windows7" fx:id="back" layoutX="697.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="33.0" prefWidth="115.0" stylesheets="@stylesheet.css" text="Back" />
+      <Button id="windows7" fx:id="added" layoutX="418.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#added" prefHeight="33.0" prefWidth="115.0" stylesheets="@stylesheet.css" text="Add" />
+      <TextField fx:id="flnumber" layoutX="196.0" layoutY="435.0" prefHeight="26.0" prefWidth="160.0" promptText="enter flight number" style="-fx-background-radius: 40;" />
+      <StackPane layoutX="24.0" layoutY="121.0" prefHeight="311.0" prefWidth="828.0">
+         <children>
+            <TableView fx:id="table_info" prefHeight="311.0" prefWidth="825.0" style="-fx-background-color: Pink;">
+               <columns>
+                  <TableColumn fx:id="FlightNo" prefWidth="91.0" text="FlightNo" />
+                  <TableColumn fx:id="dep_time" minWidth="0.0" prefWidth="76.0" text="dep_time" />
+                  <TableColumn fx:id="dep_from" prefWidth="84.0" text="dep_from" />
+                  <TableColumn fx:id="arrive_at" text="arrive_at" />
+                  <TableColumn fx:id="connecting" prefWidth="165.0" text="connecting" />
+                  <TableColumn fx:id="arrive_time" prefWidth="254.0" text="arrive_time" />
+                  <TableColumn fx:id="date" prefWidth="75.0" text="date" />
+               </columns>
+            </TableView>
+         </children>
+      </StackPane>
+      <Label fx:id="wrongNum" layoutX="230.0" layoutY="473.0" />
+   </children>
+</AnchorPane>
